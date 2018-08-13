@@ -1,3 +1,41 @@
-<p>
-  register works!
-</p>
+<p>Registration form</p>
+<div class="Registration-form">
+  <fieldset>
+  <div>
+  <label for="first-name">FIRST NAME</label>
+  <input class="form-control" placeholder="ENTER FIRST NAME"id="first-name" #firstname required>
+  <label for="last-name">LAST NAME</label>
+  <input placeholder="ENTER LAST NAME" id="last-name" #lastname>  
+</div> 
+  <div>
+<label for="address">ADDRESS</label>
+<input placeholder="ENTER ADDRESS" id="address" #address>
+<label for="department">DEPARTMENT</label>
+<input placeholder="ENTER DEPARTMENT" id="department" #department>
+</div>
+<div>
+  <label for="phone">PHONE</label>
+  <input placeholder="ENTER PHONE NUMBER" id="phone" #phone>
+  <label for="email">EMAIL</label>
+  <input placeholder="ENTER EMAIL ID" id="email" #email type="email">
+</div>
+<div>
+  <label for="password">PASSWORD</label>
+  <input placeholder="ENTER PASSWORD" id="password" #password type="password">
+  <label for="designation">TYPE</label>
+  <select for="designation">
+      <option value="student">STUDENT</option>
+      <option value="TEACHER">TEACHER</option>
+      <option value="NON-STUDENT">NON-STUDENT</option>
+      <option value="STAFF">STAFF</option>
+    </select>
+</div>
+<div>
+  <button (click)="register(firstname.value,lastname.value,phone.value,password.value)">REGISTER</button>
+</div>
+</fieldset>
+  <div>
+    <p> Already have an account ?
+  <a class="login-button" (click)="onlogin()">LOGIN</a></p>
+  </div>
+</div>

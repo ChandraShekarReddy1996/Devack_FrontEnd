@@ -1,0 +1,53 @@
+.login-button{
+    float : right;
+    color: coral;
+  }
+  div{
+    width: 100%;  
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 500px 500px;
+    border-width: 3px;
+    position: relative;
+    z-index: 1;
+  }
+  input,select{
+    width: 22%;  
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-width: 3px;
+    position: vertical;
+    z-index: 1;  
+  }
+  p{
+      font: normal;
+      color: black;
+  }
+  label, input, button {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 125px;
+}
+label {
+    color-interpolation-filters: auto
+}
+fieldset{
+    background-color: beige;
+}

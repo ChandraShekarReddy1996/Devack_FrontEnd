@@ -20,7 +20,7 @@ import { FormsModule } from '@angular/forms';
 			<li>
 				<label [for]='myid'>
         PASSWORD
-					<input #mypassword [disabled]='false' [id] = 'myid' type='text' >
+					<input #mypassword [disabled]='false' [id] = 'myid' type='password' >
 					</label>
 				</li>
       </div>
